@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller {
 
         parent::__construct();
         if (!$this->session->userdata('logado')) {
-            redirect('login/entrar');
+            redirect('conta/entrar');
         }
     }
 

@@ -2,7 +2,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Conta extends CI_Controller {
 
     public function __construct() {
 
@@ -19,26 +19,24 @@ class Login extends CI_Controller {
         if ($this->input->post('entrar') === 'entrar') {
             if ($this->input->post('captcha'))
                 redirect('conta/entrar');
-            $this->form_validation->set_rules('email', 'EMAIL', 'required|valid_email');
+            $this->form_validation->set_rules('login', 'LOGIN', 'required|min_length[6]|max_length[20]');
             $this->form_validation->set_rules('senha', 'SENHA', 'required|min_length[6]|max_length[20]');
 
             if ($this->form_validation->run() === TRUE) {
                 $this->load->model('usuarios_model');
 
-                $email = $this->input->post('email');
+                $login = $this->input->post('login');
                 $senha = $this->input->post('senha');
 
 
-                $login_existe = $this->usuarios_model->check_login($senha, $email);
+                $login_existe = $this->usuarios_model->check_login($senha, $login);
 
                 if ($login_existe) {
                     $usuario = $login_existe;
                     //configura a sessao
                     $session = array(
-                        'email' => $usuario['email'],
-                        'create' => $usuario['create'],
-                        'logado' => TRUE,
-                        'tipo'=>$usuario['tipo_usu']
+                        'login' => $usuario['login'],
+                        'logado' => TRUE
 
                     );
 
@@ -59,11 +57,10 @@ class Login extends CI_Controller {
                 );
             }
         }
-        
         $dados = array(
             "alerta" => $alerta,
-            "view"=>'login/entrar'
-
+            "view"=>'conta/entrar',
+            "hidemenu"=>true
 
 
         );
