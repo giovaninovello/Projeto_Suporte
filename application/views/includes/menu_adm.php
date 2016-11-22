@@ -8,20 +8,14 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">
-                <img src="<?php echo base_url('assets/img/niveis-de-suporte.png')?>"class="img-responsive" style="height: 50px" alt="">
+
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav container-fluid">
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="active">
+                    <a href="#">SISTEMA DE SUPORTE</a>
                 </li>
             </ul>
         </div>
@@ -36,30 +30,35 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="#">
-                    Start Bootstrap
+                <a href="<?php echo  base_url('dashboard')?>">
+                <b>Inicial</b>
                 </a>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="<?php echo  base_url('chamado/cadastrar')?>"><b>Abrir Chamado</b></a>
             </li>
             <li>
-                <a href="#">Shortcuts</a>
+               
+                <hr>
             </li>
             <li>
-                <a href="#">Overview</a>
+                <a href="<?php echo  base_url('cliente/pesquisar')?>"><b>Clientes</b></a>
+            </li>
+
+            <li>
+                <a href="<?php echo  base_url('integracao/dashboard')?>"><b>Interfaces</b></a>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="<?php echo  base_url('softhouse/cadastrar')?>"><b>Softouses</b></a>
             </li>
             <li>
-                <a href="#">About</a>
+                <a href=""><b>Suportes</b></a>
             </li>
             <li>
-                <a href="#">Services</a>
+                <a href="#"><b>Consultores</b></a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="<?php echo  base_url('conta/sair')?>"><b>Sair</b></a>
             </li>
         </ul>
     </div>
