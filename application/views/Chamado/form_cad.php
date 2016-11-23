@@ -57,7 +57,7 @@
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" name="entrar" value="entrar" class="btn btn-primary">Cadastrar Chamado</button>
+                    <button type="submit" name="entrar" value="entrar" class="btn btn-primary glyphicon glyphicon-floppy-save"> Salvar</button>
                 </div>
             </div>
                 </div>

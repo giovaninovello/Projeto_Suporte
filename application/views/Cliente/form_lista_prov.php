@@ -25,13 +25,8 @@
             <td>Dr Marcos</td>
             <td>Lages</td>
             <td>
-                <button type="button" class="btn btn-success">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-
+                <button type="button" class="btn btn-success glyphicon glyphicon-edit"></button>
+                <button type="button" class="btn btn-danger glyphicon glyphicon-remove"></button>
             </td>
 
         </tr>
@@ -44,12 +39,8 @@
             <td>Dr Joao</td>
             <td>Lages</td>
             <td>
-                <button type="button" class="btn btn-success">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
+                <button type="button" class="btn btn-success glyphicon glyphicon-edit"></button>
+                <button type="button" class="btn btn-danger glyphicon glyphicon-remove"></button>
 
             </td>
         </tr>
@@ -62,13 +53,8 @@
             <td>Dra Maria</td>
             <td>Lages</td>
             <td>
-                <button type="button" class="btn btn-success">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-
+                <button type="button" class="btn btn-success glyphicon glyphicon-edit"></button>
+                <button type="button" class="btn btn-danger glyphicon glyphicon-remove"></button>
             </td>
         </tr>
         <tr>
@@ -80,17 +66,34 @@
             <td>Dr Giovani</td>
             <td>Lages</td>
             <td>
-                <button type="button" class="btn btn-success">
-                    <span class="glyphicon glyphicon-edit"></span>
-                </button>
-                <button type="button" class="btn btn-danger">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </button>
-
+                <button type="button" class="btn btn-success glyphicon glyphicon-edit"></button>
+                <button type="button" class="btn btn-danger glyphicon glyphicon-remove"></button>
             </td>
         </tr>
+
         </tbody>
     </table>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
 </div>
 
 
